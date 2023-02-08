@@ -5,6 +5,9 @@ This script contains examples of:
     - Using multiple arms.
     - Using a gripper.
 """
+
+# not sure why but this project does not work, no erros but no robot move
+
 from os.path import dirname, join, abspath
 from pyrep import PyRep
 from pyrep.robots.arms.baxter import BaxterLeft, BaxterRight

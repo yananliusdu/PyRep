@@ -56,7 +56,7 @@ for i in range(LOOPS):
 
     # Get a path to the target (rotate so z points down)
     try:
-        path = gripper.get_path(
+        path = agent.get_path(
             position=pos, euler=[0, math.radians(180), 0])
     except ConfigurationPathError as e:
         print('Could not find path')
