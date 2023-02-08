@@ -20,13 +20,13 @@ print(torch.cuda.is_available())
 
 pr = PyRep()
 # Launch the application with a scene file in headless mode
-SCENE_FILE = join(dirname(abspath(__file__)),'ur10_test_v3.ttt')
+SCENE_FILE = join(dirname(abspath(__file__)),'ur10_test_v4.ttt')
 pr.launch(SCENE_FILE, headless=False)
 pr.start()  # Start the simulation
 
 agent = UR10()
 gripper = Robotiq85Gripper()
-camera = VisionSensor('Vision_sensor')
+# camera = VisionSensor('Vision_sensor')
 # target = Shape('banana')
 target = Shape.create(type=PrimitiveShape.SPHERE,
                       size=[0.05, 0.05, 0.05],
