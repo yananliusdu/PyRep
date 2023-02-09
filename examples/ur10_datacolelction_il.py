@@ -1,9 +1,8 @@
 
-
 #test self made ur10 with robotiq 85 gripper
-#lots of issues there does not work
+#lots of issues there does not work (partially because of the coppliasim version,
+# better with 4.1.0)
 #6 Feb 2023
-# very hard to use, going to give up and finding another sim env
 
 from os.path import dirname, join, abspath
 from pyrep import PyRep
@@ -40,7 +39,7 @@ joint_data = []
 # position_min, position_max = [0.8, -0.2, 1.0], [1.0, 0.2, 1.4]
 # starting_joint_positions = agent.get_joint_positions()
 
-LOOPS = 10
+LOOPS = 50
 position_min, position_max = [-0.5, 0.3, 0.1], [0.5, 1.0, 0.5]
 
 starting_joint_positions = agent.get_joint_positions()
