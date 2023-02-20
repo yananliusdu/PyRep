@@ -1,5 +1,5 @@
 import unittest
-from tests.core import TestCore
+from core import TestCore
 from pyrep import PyRep
 from pyrep.objects.cartesian_path import CartesianPath
 from pyrep.objects.dummy import Dummy
